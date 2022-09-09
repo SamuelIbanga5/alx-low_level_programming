@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <string.h>
 /**
  * main - Entry point
  *
@@ -8,6 +7,7 @@
  */
 int main(void)
 {
-	write(2, "and that pioece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char string [] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19"
+	write(STDOUT_FILENO, string, strlen(string);
 	return (1);
 }
