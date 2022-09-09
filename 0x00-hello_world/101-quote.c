@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char string [] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19"
+	char string [] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19";
 	write(STDOUT_FILENO, string, strlen(string);
 	return (1);
 }
