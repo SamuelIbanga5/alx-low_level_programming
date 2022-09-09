@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	char string [] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19";
-	fwrite(STDOUT_FILENO, string, strlen(string));
+	char string [] = "and the piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	fwrite(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", strlen(string));
 	return (1);
 }
