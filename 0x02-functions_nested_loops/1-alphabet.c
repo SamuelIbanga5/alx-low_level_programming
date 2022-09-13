@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * main - Program Entry point.
- * print_alphabet - This program prints all the alphabets
- * in lowercase followed by a new line without using standard
- * library functions.
+ * print_alphabet - Prints alphabet in lowercase using only _putchar.
+ * Return: None.
  */
 void print_alphabet(void)
 {
