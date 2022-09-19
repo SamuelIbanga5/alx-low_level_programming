@@ -2,7 +2,7 @@
 /**
  * puts_half - Program that prints half of a string
  * followed by a string.
- * @str: String to check.
+ * @str: String to check
  *
  */
 void puts_half(char *str)
