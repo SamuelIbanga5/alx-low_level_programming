@@ -3,7 +3,7 @@
  * _strlen - Program that returns the length of a string.
  * @s: String to count.
  *
- * Return: Length of string.
+ * Return: Length of string
  */
 int _strlen(char *s)
 {
