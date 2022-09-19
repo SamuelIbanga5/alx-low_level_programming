@@ -4,7 +4,7 @@
  * including the terminating null byte to the buffer pointed to
  * by dest.
  * @dest: Destination
- * @src: Surce of copy.
+ * @src: Surce of copy
  *
  * Return: Pointer to dest.
  */
