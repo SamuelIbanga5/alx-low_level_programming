@@ -4,7 +4,7 @@
  * print_array - Program that prints "n" elements of an integer
  * followed by a new line.
  * @a: Integer
- * @n: Number of elements of the array to be printed.
+ * @n: Number of elements of the array to be printed
  *
  */
 void print_array(int *a, int n)
