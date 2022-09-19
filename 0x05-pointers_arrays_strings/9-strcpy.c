@@ -3,7 +3,7 @@
  * _strcpy - Program that copies the strin pointed to "src",
  * including the terminating null byte to the buffer pointed to
  * by dest.
- * @dest: Destination 
+ * @dest: Destination
  * @src: Surce of copy.
  *
  * Return: Pointer to dest.
