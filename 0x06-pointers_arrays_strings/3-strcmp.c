@@ -28,7 +28,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	if (str1 < str2)
 	{
-		retval = -15;
+		retval = -1;
 	}
 	else if (str1 == str2)
 	{
@@ -36,7 +36,7 @@ int _strcmp(char *s1, char *s2)
 	}
 	else
 	{
-		retval = 15;
+		retval = 1;
 	}
 	return (retval);
 }
