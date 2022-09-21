@@ -10,33 +10,17 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int str1, str2, i, retval;
+	int i, retval;
 
-	str1 = 0;
-	str2 = 0;
 	i = 0;
-	while (s1[i] != '\0')
+	while (s1[i] != '\0' || s2[i] != '\0')
 	{
-		str1 += (int)s1[i];
+		if (s1[i] != s2[i])
+		{
+			retval = s1[i] - s2[i];
+			return retval;
+		}
 		i++;
 	}
-	i = 0;
-	while (s2[i] != '\0')
-	{
-		str2 += (int)s2[i];
-		i++;
-	}
-	if (str1 < str2)
-	{
-		retval = -1;
-	}
-	else if (str1 == str2)
-	{
-		retval = 0;
-	}
-	else
-	{
-		retval = 1;
-	}
-	return (retval);
+	return (0);
 }
