@@ -6,37 +6,27 @@
  */
 char *cap_string(char *str)
 {
-	int i;
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
 
-	i = 0;
-	while (str[i] != '\0')
+	while (*(s + i))
 	{
-		if (i != 0)
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
-			if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-			|| str[i] == ',' || str[i] == ';' || str[i] == '.'
-			|| str[i] == '!' || str[i] == '?' || str[i] == '"'
-			|| str[i] == '(' || str[i] == ')' || str[i] == '{'
-		       	|| str[i] == '}')
+			if (i == 0)
+				*(s + i) -= 'a' - 'A';
+			else
 			{
-				if (str[i + 1] == ' ' || str[i + 1] == '\t' || str[i + 1] == '\n'
-				|| str[i + 1] == ',' || str[i + 1] == ';' || str[i + 1] == '.'
-				|| str[i + 1] == '!' || str[i + 1] == '?' || str[i + 1] == '"'
-				|| str[i + 1] == '(' || str[i + 1] == ')' || str[i + 1] == ')'
-				|| str[i + 1] == '{' || str[i + 1] == '}')
+				for (j = 0; j <= 12; j++)
 				{
-					if (str[i + 2] >= 97 && str[i + 2] <= 122)
-						str[i + 2] = str[i + 2] - 32;
-				}
-				else
-				{
-					if (str[i + 1] >= 97 && str[i + 1] <= 122)
-						str[i + 1] = str[i + 1] - 32;
+					if (a[j] == *(s + i - 1))
+						*(s + i) -= 'a' - 'A';
 				}
 			}
 		}
 		i++;
 	}
-	return (str);
+	return (s);
+
 }
 
