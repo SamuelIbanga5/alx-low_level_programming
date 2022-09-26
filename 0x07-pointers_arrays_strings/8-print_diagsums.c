@@ -9,7 +9,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i, j, move, diagsum, diagsum2;
-	
+
 	diagsum = 0;
 	diagsum2 = 0;
 	for (i = 0; i < size; i++)
