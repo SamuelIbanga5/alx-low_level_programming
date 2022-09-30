@@ -3,6 +3,8 @@
 /**
  * main - Program entry point.
  * Description - Prints name of the executable file.
+ * @argc: Number of command arguments.
+ * @argv: Array of strings.
  * Return: Always 0 for success.
  */
 int main(int __attribute__((unused))argc, char *argv[])
