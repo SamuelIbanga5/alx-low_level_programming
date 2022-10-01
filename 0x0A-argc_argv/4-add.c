@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 	if (argc < 3)
 	{
 		printf("0\n");
-		return 
+		return (1);
+	}
+	else
+	{
 		for (i = 1; i < argc; i++)
 		{
 			for (j = 0; argv[i][j]; j++)
