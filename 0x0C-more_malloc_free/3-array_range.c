@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * array_string - Function that creates an array of integers.
+ * array_range - Function that creates an array of integers.
  * @min: Minimum value.
  * @max: Maximum value.
  * Return: Pointer to the newly created array.
