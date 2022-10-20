@@ -24,7 +24,7 @@ unsigned int length(char *str)
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -44,4 +44,4 @@ list_t *add_node(list_t **head, const char *str)
 	new->next = *head;
 	*head = new;
 	return (new);
-}	
+}
