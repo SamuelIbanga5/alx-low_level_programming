@@ -3,9 +3,9 @@
 /**
  * interpolation_search - Searches for a value in a sorted array
  * using interpolation search algorithm.
- * array: A pointer to the first element of the array to search in.
- * size: The number of elements in array.
- * value: THe value to search for.
+ * @array: A pointer to the first element of the array to search in.
+ * @size: The number of elements in array.
+ * @value: THe value to search for.
  * Return: The first index where value is located.
  */
 
